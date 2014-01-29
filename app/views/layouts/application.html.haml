@@ -1,0 +1,85 @@
+!!!
+%html.no-js
+  %head
+    %title MAKEspace
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "A hackerspace/makerspace located in State College, PA.", name: "description"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    = stylesheet_link_tag "bootstrap.min", media: "screen", "data-turbolinks-track" => true
+    = stylesheet_link_tag "bootstrap-responsive.min", media: "screen", "data-turbolinks-track" => true
+    = stylesheet_link_tag "colorbox", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600,400italic&subset=latin,cyrillic"
+    = stylesheet_link_tag "main", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag "font-awesome.min", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    = javascript_include_tag "vendor/modernizr-2.6.2.min", "data-turbolinks-track" => true
+    = javascript_include_tag "main", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand.goTop{href: "#"}
+            = image_tag "header-logo.png"
+          .nav-collapse.pull-right
+            %ul.nav
+              %li.active
+                %a{href: "index.html"} Home
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+                  Pages
+                  %b.caret
+                %ul.dropdown-menu{role: "menu"}
+                  %li
+                    %a{href: "about.html"} About Us
+                  %li
+                    %a{href: "services.html"} Services
+                  %li
+                    %a{href: "price.html"} Price
+                  %li
+                    %a{href: "login.html"} Login
+                  %li
+                    %a{href: "register.html"} Register
+                  %li
+                    %a{href: "faq.html"} F.A.Q.
+                  %li
+                    %a{href: "contacts.html"} Contact
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+                  Blog
+                  %b.caret
+                %ul.dropdown-menu{role: "menu"}
+                  %li
+                    %a{href: "blog-right.html"} Blog right sidebar
+                  %li
+                    %a{href: "blog-left.html"} Blog left sidebar
+                  %li
+                    %a{href: "blog-full.html"} Blog full
+                  %li.divider
+                  %li
+                    %a{href: "blog-single.html"} Blog single one
+                  %li
+                    %a{href: "blog-single2.html"} Blog single two
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+                  Gallery
+                  %b.caret
+                %ul.dropdown-menu{role: "menu"}
+                  %li
+                    %a{href: "works.html"} Simple gallery
+                  %li
+                    %a{href: "works2.html"} With text
+                  %li
+                    %a{href: "works3.html"} With filter
+                  %li.divider
+                  %li
+                    %a{href: "works-single.html"} Single project
+              %li
+                %a{href: "shortcodes.html"} Shortcodes
+    = yield
