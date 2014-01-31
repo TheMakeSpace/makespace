@@ -1,3 +1,5 @@
+@import "colors"
+
 html, button, input, select, textarea
   color: #222
 
@@ -28,18 +30,18 @@ textarea
   resize: vertical
 
 a
-  color: #39AE77
+  color: $primary_color
   &:hover
     text-decoration: none
-    color: #fff
+    color: $white
   &:focus
     outline: none
     text-decoration: none
-    color: #39AE77
+    color: $primary_color
   &.trigger
-    border-bottom: 1px dashed #39AE77
+    border-bottom: 1px dashed $primary_color
     &:hover
-      border-bottom: 1px dashed #fff
+      border-bottom: 1px dashed $white
 
 ul
   list-style: square
@@ -58,7 +60,7 @@ ol li
     font-size: 80%
     margin-right: 4px
   a:hover
-    color: #fff
+    color: $white
 
 .browsehappy
   margin: 0.2em 0
@@ -78,7 +80,7 @@ body
   font-size: 1.5em
   font-family: 'Open Sans', Helvetica, Helvetica Nue, Arial, sans-serif
   height: 100%
-  background: #2d3e43
+  background: $background_color_2
   color: #b1c1c6
   overflow-y: scroll
   -webkit-overflow-scrolling: touch
@@ -87,9 +89,9 @@ body
 
 .form
   input, textarea
-    border: 1px solid #4D5F65
+    border: 1px solid $border_color_2
     border-radius: 0
-    background: #243135
+    background: $background_color_1
     color: #87989E
     margin-top: 15px
     margin-bottom: 0
@@ -101,11 +103,11 @@ body
 
 .dark-bg .form
   input, textarea
-    background: #2D3E43
+    background: $background_color_2
 
 .form
   input:focus, textarea:focus
-    border: 1px solid #39AE77
+    border: 1px solid $primary_color
     box-shadow: none
     outline: none
 
@@ -114,7 +116,7 @@ body
   margin-bottom: 30px
 
 .code
-  border: 1px solid #4D5F65
+  border: 1px solid $border_color_2
   padding: 1px 4px
   color: #B1C1C6
   margin: 2px 0
@@ -124,42 +126,42 @@ body
 h1
   font-weight: normal
   font-size: 48px
-  color: #fff
+  color: $white
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3)
   &.with-border
     border-bottom: 3px solid #263439
-    box-shadow: 0 3px 0 0 #4d5f65
+    box-shadow: 0 3px 0 0 $border_color_2
     padding-bottom: 5px
 
 h2
   font-weight: normal
   font-size: 32px
-  color: #fff
+  color: $white
   text-transform: uppercase
   font-weight: 300
   &.with-border
     border-bottom: 2px solid #263439
-    box-shadow: 0 2px 0 0 #4d5f65
+    box-shadow: 0 2px 0 0 $border_color_2
 
 h3
   font-size: 18px
   line-height: 25px
   text-transform: uppercase
-  color: #fff
+  color: $white
   font-weight: normal
   &.with-border
-    border-bottom: 1px solid #243135
-    box-shadow: 0 1px 0 0 #4D5F65
+    border-bottom: 1px solid $background_color_1
+    box-shadow: 0 1px 0 0 $border_color_2
 
 h4.with-border, h5.with-border, h6.with-border
-  border-bottom: 1px solid #243135
-  box-shadow: 0 1px 0 0 #4D5F65
+  border-bottom: 1px solid $background_color_1
+  box-shadow: 0 1px 0 0 $border_color_2
 
 p a
   text-decoration: underline
 
 a:hover h3
-  color: #fff
+  color: $white
   transition: color ease-in-out .3s
 
 p
@@ -170,21 +172,21 @@ p
 .dark-bg
   h1.with-border, h2.with-border, h3.with-border, h4.with-border, h5.with-border, h6.with-border
     border-bottom-color: #1f282b
-    box-shadow: 0 2px 0 0 #2D3E43
+    box-shadow: 0 2px 0 0 $background_color_2
 
 h4
   font-size: 16px
-  color: #fff
+  color: $white
   font-weight: normal
 
 h5
   font-size: 14px
-  color: #fff
+  color: $white
   font-weight: normal
 
 h6
   font-size: 12px
-  color: #fff
+  color: $white
   font-weight: normal
 
 .container >
@@ -195,32 +197,32 @@ h6
     margin-top: 20px
 
 .color
-  color: #39ae77
+  color: $primary_color
 
 table
   caption
     padding: 10px 0
-    background: #39AE77
-    color: #fff
+    background: $primary_color
+    color: $white
     font-size: 16px
     text-transform: uppercase
-  border: 2px solid #4D5F65
+  border: 2px solid $border_color_2
 
 .table
   th
-    color: #fff
+    color: $white
     font-weight: normal
   td, th
     padding: 12px
   td
-    border-color: #4D5F65
+    border-color: $border_color_2
 
 .table-hover tbody tr:hover >
   td, th
-    background: #2D3E43
+    background: $background_color_2
 
 .light-bg .table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th
-  background: #243135
+  background: $background_color_1
 
 p + .btn
   margin-top: 0
@@ -229,52 +231,52 @@ p + .btn
   padding: 11px 25px
 
 .btn
-  border: 1px solid #39AE77
-  background: #39AE77
+  border: 1px solid $primary_color
+  background: $primary_color
   background-image: none
   text-shadow: none
-  color: #fff
+  color: $white
   border-radius: 0
   transition: all ease-in-out .3s
   margin: 0
   box-shadow: none
   &.disabled
-    background: #39AE77
-    color: #fff
+    background: $primary_color
+    color: $white
   &:hover
     filter: none
     background: none
-    color: #fff
+    color: $white
   &:focus
-    color: #fff
+    color: $white
     outline: none
-    background: #39AE77
+    background: $primary_color
 
 .btn-primary
   background: none
   filter: none
-  border: 1px solid #39AE77
+  border: 1px solid $primary_color
   &:focus
     background: none
     filter: none
-    border: 1px solid #39AE77
+    border: 1px solid $primary_color
 
 .btn
   &:hover:not(.disabled)
     background: none
     filter: none
-    color: #fff
+    color: $white
     transition: all ease-in-out .3s !important
   &.btn-primary:hover
-    background: #39AE77
+    background: $primary_color
 
 .btn-primary.disabled
   background: none
-  border: 1px solid #39AE77
+  border: 1px solid $primary_color
   filter: none
   &:hover
     background: none
-    border: 1px solid #39AE77
+    border: 1px solid $primary_color
     filter: none
 
 p .btn
@@ -343,22 +345,22 @@ p .btn
   margin: 0
   position: relative
   margin: 10px 0 25px
-  background-color: #243135
+  background-color: $background_color_1
   filter: none
 
 .dark-bg .progress
-  background-color: #2D3E43
+  background-color: $background_color_2
 
 .progress
   .bar
-    background-color: #39AE77
+    background-color: $primary_color
     background-image: none
     filter: none
     border-radius: 0
     box-shadow: none
     position: relative
   .progress-name
-    color: #FFFFFF
+    color: $white
     left: 0px
     line-height: 38px
     padding-left: 20px
@@ -369,14 +371,14 @@ p .btn
     -moz-box-sizing: border-box
     box-sizing: border-box
   .value
-    color: #FFFFFF
+    color: $white
     line-height: 38px
     position: absolute
     right: 20px
 
 .goTop-link
-  background: #243135
-  border: 1px solid #2D3E43
+  background: $background_color_1
+  border: 1px solid $background_color_2
   bottom: 0
   color: #B1C1C6
   display: none
@@ -402,18 +404,18 @@ p .btn
     a, span
       background: none
       filter: none
-      border-color: #4D5F65
+      border-color: $border_color_2
     a:hover, span:hover
       background: none
       filter: none
-      color: #fff
+      color: $white
   &.active > a
-    background: #39AE77
-    color: #fff
+    background: $primary_color
+    color: $white
 
 .label
-  background-color: #39AE77
-  color: #FFFFFF
+  background-color: $primary_color
+  color: $white
   font-weight: bold
   padding: 5px 4px
   border-radius: 0
@@ -421,8 +423,8 @@ p .btn
   margin: 0 1px
 
 .badge
-  background-color: #39AE77
-  color: #FFFFFF
+  background-color: $primary_color
+  color: $white
   font-weight: bold
   padding: 5px 4px
   border-radius: 0
@@ -460,9 +462,9 @@ p .btn
   color: #3f814b
 
 .tab-content
-  border-bottom: 2px solid #4D5F65
+  border-bottom: 2px solid $border_color_2
   padding: 10px
-  background: #243135
+  background: $background_color_1
 
 .nav-tabs
   margin: 0
@@ -472,40 +474,40 @@ p .btn
       padding: 10px 0
       width: 50px
       text-align: center
-      background: #39AE77
-      color: #fff
+      background: $primary_color
+      color: $white
       font-size: 25px
       border-radius: 0
     &.active a
-      background: #243135
-      border-color: #243135
-      color: #fff
+      background: $background_color_1
+      border-color: $background_color_1
+      color: $white
       &:hover, &:focus
-        background: #243135
-        border-color: #243135
-        color: #fff
+        background: $background_color_1
+        border-color: $background_color_1
+        color: $white
   > li > a
     &:hover, &:focus
-      background-color: #39AE77
+      background-color: $primary_color
       text-decoration: none
-      border: 1px solid #4D5F65
-      border-bottom-color: #39AE77
-      color: #fff
+      border: 1px solid $border_color_2
+      border-bottom-color: $primary_color
+      color: $white
       outline: none
 
 .dark-bg
   .tab-content
-    border-bottom: 2px solid #4D5F65
+    border-bottom: 2px solid $border_color_2
     padding: 10px
-    background: #2D3E43
+    background: $background_color_2
   .nav-tabs li.active a
-    background: #2D3E43
-    border-color: #2D3E43
+    background: $background_color_2
+    border-color: $background_color_2
     border-bottom: none
-    color: #fff
+    color: $white
     &:hover, &:focus
-      background: #2D3E43
-      border-color: #2D3E43
+      background: $background_color_2
+      border-color: $background_color_2
 
 .accordion-group
   border-radius: 0
@@ -513,11 +515,11 @@ p .btn
   margin-bottom: 5px
 
 .accordion-heading
-  background: #39AE77
-  color: #fff
-  border: 2px solid #39AE77
+  background: $primary_color
+  color: $white
+  border: 2px solid $primary_color
   a
-    color: #fff
+    color: $white
     font-size: 16px
     &:focus
       outline: none
@@ -526,7 +528,7 @@ p .btn
       margin-right: 5px
 
 .accordion-inner
-  border: 2px solid #4D5F65
+  border: 2px solid $border_color_2
 
 .toggle-block
   .accordion-toggle
@@ -548,7 +550,7 @@ p .btn
   border: none
   font-size: 90px
   border-radius: 0
-  background: #243135
+  background: $background_color_1
   height: 55px
   left: -10px
   opacity: 1
@@ -567,7 +569,7 @@ p .btn
     left: -10px
 
 .dark-bg .carousel-control
-  background: #2D3E43
+  background: $background_color_2
 
 .carousel-control
   &.right
@@ -582,7 +584,7 @@ p .btn
     opacity: 1
     filter: alpha(opacity = 100)
   &:hover
-    background: #39AE77
+    background: $primary_color
     opacity: 1
     filter: alpha(opacity = 100)
 
@@ -590,15 +592,15 @@ p .btn
   border-radius: 0
   font-size: 14px
   text-shadow: none
-  color: #fff
+  color: $white
   border: none
-  background: #39AE77
+  background: $primary_color
 
 .alert-inverse
-  background: #243135
+  background: $background_color_1
 
 .dark-bg .alert-inverse
-  background: #2D3E43
+  background: $background_color_2
 
 .alert
   &.alert-success
@@ -610,33 +612,33 @@ p .btn
   &.alert-error
     background: #d96663
   h2, h3, h4, h5
-    color: #fff
+    color: $white
     margin-bottom: 10px
     font-weight: bold
   .close:hover, p
-    color: #fff
+    color: $white
 
 .close
-  color: #fff
+  color: $white
   right: -10px
   top: -10px
   &:hover
-    color: #fff
+    color: $white
     opacity: 1
     filter: alpha(opacity = 100)
 
 .modal
-  background: #2D3E43
+  background: $background_color_2
   border-radius: 0
   font-size: 14px
 
 .modal-footer
-  background: #243135
-  border-top: 1px solid #4d5f65
+  background: $background_color_1
+  border-top: 1px solid $border_color_2
   box-shadow: 0 1px 0 0 #161B1D
 
 .modal-header
-  border-bottom: 1px solid #4d5f65
+  border-bottom: 1px solid $border_color_2
 
 .modal-footer .btn
   margin: 0
@@ -645,30 +647,30 @@ a[rel=popover]
   cursor: pointer
 
 .popover
-  background: #243135
+  background: $background_color_1
   border-radius: 0
   box-shadow: none
 
 .popover-title
-  background: #243135
+  background: $background_color_1
   border-radius: 0
   box-shadow: none
-  border-bottom: 1px solid #4d5f65
+  border-bottom: 1px solid $border_color_2
 
 .popover.top .arrow:after
-  border-top-color: #243135
+  border-top-color: $background_color_1
 
 .dark-bg
   .popover, .popover-title
-    background: #2D3E43
+    background: $background_color_2
   .popover.top .arrow:after
-    border-top-color: #2D3E43
+    border-top-color: $background_color_2
 
 .hero-unit
-  background: #243135
+  background: $background_color_1
 
 .dark-bg .hero-unit
-  background: #2D3E43
+  background: $background_color_2
 
 blockquote
   border: none
@@ -679,7 +681,7 @@ blockquote
   padding: 0
   small
     margin-top: 10px
-    color: #fff
+    color: $white
     &:after
       content: " —"
   h2
@@ -699,20 +701,20 @@ blockquote
 .navbar
   .btn-navbar
     background-image: none
-    background: #39ae77
+    background: $primary_color
     filter: none
   .navbar-inner
-    background-color: #243135
+    background-color: $background_color_1
     background-image: none
     filter: none
     border: none
     border-radius: 0
-    border-bottom: 2px solid #243135
+    border-bottom: 2px solid $background_color_1
     min-height: 40px
     padding: 10px 20px 12px
-    box-shadow: 0 -3px 2px 0 #3E4C51 inset
+    box-shadow: 0 -3px 2px 0 $border_color_1 inset
     .brand
-      color: #fff
+      color: $white
       margin-right: 10px
       text-transform: uppercase
 
@@ -720,13 +722,13 @@ blockquote
   margin-right: 5px
 
 .navbar .navbar-inner .nav > li.active > a
-  border: 1px solid #3e4c51
-  background: #39ae77
-  color: #fff
+  border: 1px solid $border_color_1
+  background: $primary_color
+  color: $white
   &:hover, &:focus
-    border: 1px solid #3e4c51
-    background: #39ae77
-    color: #fff
+    border: 1px solid $border_color_1
+    background: $primary_color
+    color: $white
 
 .navbar-inner .nav > li > a
   font-size: 14px
@@ -738,21 +740,21 @@ blockquote
   text-shadow: none
   &:focus
     color: #87989e
-    border-color: #3e4c51
+    border-color: $border_color_1
     background: none
     filter: none
 
 .navbar .nav li.dropdown
   &.open > .dropdown-toggle, &.active > .dropdown-toggle, &.open.active > .dropdown-toggle
-    border-color: #3e4c51
-    background: #2D3E43
-    color: #fff
+    border-color: $border_color_1
+    background: $background_color_2
+    color: $white
     border-bottom: 0
     margin-bottom: 0
 
 .navbar-inner .nav > li > a:hover
-  border-color: #3e4c51
-  color: #fff
+  border-color: $border_color_1
+  color: $white
   background: none
   filter: none
 
@@ -762,29 +764,29 @@ blockquote
   .nav li.dropdown
     > a
       &:hover .caret, &:focus .caret
-        border-bottom-color: #FFFFFF
-        border-top-color: #FFFFFF
+        border-bottom-color: $white
+        border-top-color: $white
     &.open > .dropdown-toggle .caret, &.active > .dropdown-toggle .caret, &.open.active > .dropdown-toggle .caret
-      border-bottom-color: #FFFFFF
-      border-top-color: #FFFFFF
+      border-bottom-color: $white
+      border-top-color: $white
 
 .dropdown-menu
-  background-color: #243135
+  background-color: $background_color_1
   margin-top: 0px
   border-radius: 0
-  border: 1px solid #3e4c51
+  border: 1px solid $border_color_1
   box-shadow: none
 
 .caret
-  border-top-color: #fff
+  border-top-color: $white
 
 .navbar .dropdown-menu
   border-top: 0
-  background-color: #2D3E43
+  background-color: $background_color_2
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
 
 .dark-bg .dropdown-menu
-  background-color: #2D3E43
+  background-color: $background_color_2
 
 .navbar .nav > li > .dropdown-menu
   &:after, &:before
@@ -805,49 +807,49 @@ blockquote
 
 .dropdown-menu > li > a
   &:hover, &:focus
-    background-color: #39AE77
+    background-color: $primary_color
     background-image: none
-    color: #fff
+    color: $white
     filter: none
 
 .dropdown-submenu
   &:hover > a, &:focus > a
-    background-color: #39AE77
+    background-color: $primary_color
     background-image: none
-    color: #fff
+    color: $white
     filter: none
 
 .dropdown-menu > .active > a
-  background-color: #39AE77
+  background-color: $primary_color
   background-image: none
   filter: none
-  color: #fff !important
+  color: $white !important
   &:hover, &:focus
-    background-color: #39AE77
+    background-color: $primary_color
     background-image: none
     filter: none
-    color: #fff !important
+    color: $white !important
 
 .nav-collapse
   &.collapse
     .nav
       li > a:hover, > li > a:focus
-        background-color: #39AE77
+        background-color: $primary_color
         background-image: none
         filter: none
-        color: #fff !important
+        color: $white !important
     .dropdown-menu a
       &:hover, &:focus
-        background-color: #39AE77
+        background-color: $primary_color
         background-image: none
         filter: none
-        color: #fff !important
+        color: $white !important
   .open > .dropdown-menu
     margin: 0
     box-shadow: none
 
 .dropdown-menu .divider
-  border-color: #3e4c51
+  border-color: $border_color_1
   background: none
   filter: none
 
@@ -862,7 +864,7 @@ blockquote
   -o-background-size: cover
   -moz-background-size: cover
   text-align: center
-  color: #fff
+  color: $white
   width: 100%
   height: 350px
   overflow: hidden
@@ -896,7 +898,7 @@ blockquote
   left: 50%
   padding: 20px 35px 25px
   background: rgba(0, 0, 0, 0.5)
-  border: .2em solid #fff
+  border: .2em solid $white
   line-height: 1.2
   margin-left: -12em
   font-size: 1em
@@ -909,7 +911,7 @@ blockquote
 .parallax .logotext
   width: 24em
   top: 35%
-  border: .5em solid #fff
+  border: .5em solid $white
   margin-left: -12em
   padding: 2em 0
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5)
@@ -924,7 +926,7 @@ blockquote
   p
     margin-bottom: 0
   i
-    color: #39AE77
+    color: $primary_color
     font-size: 50px
   &.no-animate
     position: relative
@@ -935,12 +937,12 @@ blockquote
   input
     &[type="text"], &[type="password"], &[type="email"]
       border-color: #87989E
-      color: #fff
+      color: $white
       height: auto
       background: url('img/bg-overlay.png')
       font-size: 18px
     &:focus
-      border: 1px solid #39AE77
+      border: 1px solid $primary_color
   .checkbox label
     line-height: 1
 
@@ -973,14 +975,14 @@ blockquote
   position: relative
   top: 37%
   font-size: 80px
-  color: #fff
+  color: $white
   z-index: 99
   transition: color ease-in-out .3s
   &:hover
-    color: #39AE77
+    color: $primary_color
 
 .text i:hover
-  color: #fff
+  color: $white
 
 .margin-0
   margin: 0 !important
@@ -1041,8 +1043,8 @@ blockquote
   font-size: 14px
 
 .text-block
-  /*border-top: 2px solid #2d3e43;
-   *border-bottom: 3px solid #243135;
+  /*border-top: 2px solid $background_color_2;
+   *border-bottom: 3px solid $background_color_1;
    *box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.3), 0 2px 1px 0 rgba(77, 95, 101, .6) inset;
   position: relative
   z-index: 3
@@ -1050,21 +1052,21 @@ blockquote
 
 .dark-bg
   position: relative
-  background: #243135
+  background: $background_color_1
   padding: 30px 0 45px
 
 .light-bg
   padding: 30px 0 45px
   position: relative
-  background: #2d3e43
+  background: $background_color_2
 
 /*features
 
 .features
-  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.4), 0 3px 2px 0 #3e4c51 inset
+  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.4), 0 3px 2px 0 $border_color_1 inset
   article i
     font-size: 60px
-    color: #fff
+    color: $white
     display: block
     margin: 25px 0 20px
     text-align: center
@@ -1087,7 +1089,7 @@ blockquote
 
 .hover-block
   text-align: center
-  color: #fff
+  color: $white
   position: relative
   top: 30%
   filter: alpha(opacity = 0)
@@ -1104,10 +1106,10 @@ blockquote
     display: inline-block
     margin: 10px 10px 0 0
     a
-      color: #fff
+      color: $white
       transition: color ease-in-out .2s
       &:hover
-        color: #39AE77
+        color: $primary_color
 
 /*services
 
@@ -1121,21 +1123,21 @@ blockquote
     height: 50px
     width: 50px
     line-height: 50px
-    color: #FFFFFF
+    color: $white
     display: inline-block
     margin-bottom: 20px
     overflow: hidden
     position: relative
     text-align: center
-    background-color: #39AE77
+    background-color: $primary_color
     transition: all ease-in-out .2s
 
 .light-bg .services-block article:hover .icon-service
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1)
-  background-color: #243135
+  background-color: $background_color_1
 
 .dark-bg .services-block article:hover .icon-service
-  background-color: #2D3E43
+  background-color: $background_color_2
 
 .item-desc
   margin-left: 70px
@@ -1152,20 +1154,20 @@ blockquote
   .block-icon
     width: 170px
     height: 170px
-    background: #39AE77
+    background: $primary_color
     margin: 0 auto 20px
     border-radius: 100px
     border: 4px solid transparent
     transition: all ease-out .3s
   article:hover .block-icon
-    border: 4px solid #39AE77
+    border: 4px solid $primary_color
     background: none
     filter: none
 
 .block-icon i
   font-size: 80px
   line-height: 170px
-  color: #fff
+  color: $white
 
 /*works
 
@@ -1183,7 +1185,7 @@ blockquote
   margin-bottom: 15px
 
 .thumbnail
-  border: 1px solid #4D5F65
+  border: 1px solid $border_color_2
   border-radius: 0
   padding: 10px
   position: relative
@@ -1192,10 +1194,10 @@ blockquote
 .thumbnails h3
   a
     font-size: 15px
-    color: #39ae77
+    color: $primary_color
   font-size: 15px
-  color: #39ae77
-  color: #fff
+  color: $primary_color
+  color: $white
 
 .thumbnail
   h3 small
@@ -1207,7 +1209,7 @@ i
   margin-right: 2px
 
 .thumbnails h3 a:hover
-  color: #fff
+  color: $white
 
 .big-preview p
   font-size: 16px
@@ -1215,7 +1217,7 @@ i
 
 .img-wrap
   .icon-zoom-in
-    color: #fff
+    color: $white
     position: absolute
     font-size: 50px
     left: 49%
@@ -1232,15 +1234,15 @@ i
     position: relative
     margin-bottom: 20px
   blockquote
-    border: 2px solid #4D5F65
-    border-bottom: 3px solid #39AE77
+    border: 2px solid $border_color_2
+    border-bottom: 3px solid $primary_color
     padding: 15px
     margin-bottom: 0
     font-style: italic
     font-size: 16px
     line-height: 22px
   .caret
-    border-top: 7px solid #39AE77
+    border-top: 7px solid $primary_color
     border-width: 7px
     font-size: 12px
     height: 0
@@ -1252,7 +1254,7 @@ i
     width: 0
 
 .author
-  color: #fff
+  color: $white
   span
     color: #b1c1c6
 
@@ -1260,7 +1262,7 @@ i
   margin-bottom: 30px
   margin-top: 20px
   article
-    background: #fff
+    background: $white
     text-align: center
     margin-bottom: 20px
 
@@ -1273,34 +1275,34 @@ i
       transform: scale(1.1)
   h3
     padding: 10px 0
-    background: #39AE77
+    background: $primary_color
     text-align: center
     margin-bottom: 0
 
 .price-table
-  border: 2px solid #4D5F65
+  border: 2px solid $border_color_2
   border-top: none
   padding: 10px
   text-align: center
   margin-bottom: 20px
   font-size: 30px
   p
-    color: #fff
+    color: $white
     line-height: 1.4
   &.recommend
-    background: #243135
-    color: #fff
+    background: $background_color_1
+    color: $white
 
 .dark-bg .price-table.recommend
-  background: #2D3E43
+  background: $background_color_2
 
 .price-table .price
-  color: #39AE77
+  color: $primary_color
   font-size: 54px
 
 .price-features
   font-size: 16px
-  border-top: 2px solid #4D5F65
+  border-top: 2px solid $border_color_2
   padding: 20px 0
   ul
     list-style: none
@@ -1329,13 +1331,13 @@ h3 + .info-panel
 .info-panel
   margin-bottom: 10px
   padding-bottom: 5px
-  border-bottom: 1px solid #243135
-  box-shadow: 0 1px 0 0 #4D5F65
+  border-bottom: 1px solid $background_color_1
+  box-shadow: 0 1px 0 0 $border_color_2
   span
     margin-right: 8px
     font-size: 13px
     i
-      color: #fff
+      color: $white
 
 .media.comments
   margin: 20px 0
@@ -1376,7 +1378,7 @@ h3 + .info-panel
 
 .comments-block > .media
   padding: 10px
-  border: 1px solid #4D5F65
+  border: 1px solid $border_color_2
 
 .single-blog
   .img-wrap
@@ -1395,7 +1397,7 @@ h3 + .info-panel
     i
       font-size: 26px
       float: left
-      color: #fff
+      color: $white
     p
       margin-top: 5px
       margin-left: 40px
@@ -1407,7 +1409,7 @@ h3 + .info-panel
 .social
   margin-top: 20px
   ul li a
-    background: #243135
+    background: $background_color_1
     display: block
     float: left
     height: 45px
@@ -1418,19 +1420,19 @@ h3 + .info-panel
     width: 45px
     transition: all 0.3s ease 0s
     i
-      color: #2D3E43
+      color: $background_color_2
       display: inline-block
       font-size: 28px
       line-height: 45px
       margin: 0
 
 .dark-bg .social ul li a
-  background: #2D3E43
+  background: $background_color_2
   i
-    color: #243135
+    color: $background_color_1
 
 .social ul li a:hover
-  background: #39AE77
+  background: $primary_color
 
 /*footer
 
@@ -1438,9 +1440,9 @@ footer
   z-index: 4
   h4
     padding-bottom: 5px
-    color: #39AE77
-    border-bottom: 2px solid #243135
-    box-shadow: 0 1px 0 0 #2D3E43
+    color: $primary_color
+    border-bottom: 2px solid $background_color_1
+    box-shadow: 0 1px 0 0 $background_color_2
   ul
     font-size: 13px
     li a
@@ -1465,7 +1467,7 @@ footer
     margin-right: 20px
     margin-top: 0
     margin-left: 0
-    background: #243135
+    background: $background_color_1
     float: left
 
 .stream a
