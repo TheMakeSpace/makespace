@@ -11,6 +11,17 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
+//= require bootstrap.min
+//= require jquery.colorbox-min
+//= require jquery.imagesloaded
+//= require jquery.wookmark.min
+//= require placeholder
+//= require plugins
+//= require respond.min
+//= require main
+//
 //= require turbolinks
+
 //= require_tree .
