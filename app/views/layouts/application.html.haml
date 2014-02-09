@@ -15,22 +15,7 @@
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          = link_to @cms_site.pages.root.full_path, class: "brand goTop" do
-            = image_tag "header-logo.png"
-          .nav-collapse.pull-right
-            %ul.nav
-              %li{class: ("active" if current_page?(@cms_site.pages.root))}
-                = link_to @cms_site.pages.root.label.upcase, @cms_site.pages.root.full_path
-              - @cms_site.pages.root.children.published.each do |page|
-                %li{class: ("active" if current_page?(page))}
-                  = link_to page.label.upcase, page.full_path
+    = render "shared/navbar"
     = yield
-
+    = render "shared/footer"
     = javascript_include_tag "application", "data-turbolinks-track" => true
