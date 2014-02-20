@@ -9,6 +9,7 @@ solr/data/
 solr/pids/
 logfile
 public/system
+public/assets
 config/initializers/secret_token.rb
 
 # Doc generated stuff
