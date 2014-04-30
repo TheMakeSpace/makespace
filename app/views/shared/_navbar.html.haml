@@ -14,3 +14,5 @@
           - @cms_site.pages.root.children.published.each do |page|
             %li{class: ("active" if current_page?(page))}
               = link_to page.label.upcase, page.full_path
+          %li
+            = link_to "FORUM", "http://forum.makespace.io"
