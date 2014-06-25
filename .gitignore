@@ -29,8 +29,6 @@ Vagrantfile
 
 # OS stuff
 .DS_Store
-.env
-.envrc
 
 # IDE stuff
 .project
