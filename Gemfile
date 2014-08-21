@@ -22,6 +22,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '~>4.2' # broken dependency in comfymexsofa
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # NOT turning these on until Comfortable Mexican Sofa supports them.
@@ -33,7 +34,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'git'
 
-gem 'comfortable_mexican_sofa'
+gem 'comfortable_mexican_sofa', '~> 1.12'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
