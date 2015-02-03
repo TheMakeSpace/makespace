@@ -161,7 +161,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-rails (~> 4.0.0)
+  coffee-rails (~> 4.0)
   comfortable_mexican_sofa (~> 1.12)
   dotenv-rails
   git
@@ -170,6 +170,6 @@ DEPENDENCIES
   jquery-ui-rails (~> 4.2)
   pg
   rails (~> 4.0)
-  sass-rails (~> 4.0.0)
+  sass-rails (~> 4.0)
   sdoc
-  uglifier (>= 1.3.0)
+  uglifier (>= 1.3)
