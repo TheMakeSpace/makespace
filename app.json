@@ -1,0 +1,21 @@
+{
+  "name": "makespace",
+  "scripts": {
+  },
+  "env": {
+    "CMS_PASSWORD": {
+      "required": true
+    },
+    "CMS_USERNAME": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
